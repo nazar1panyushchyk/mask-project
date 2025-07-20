@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  height: 110px;
+  background: linear-gradient(90deg, #ff7a00de 30%, #ffc300f0 100%);
+  background-repeat: no-repeat;
+  box-shadow: -10px 10px 30px #9d5519;
+}
+
+nav {
+  display: flex;
+  gap: 75px;
+}
+
+.header-links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 13px;
+}
+
+.company-name {
+  font-size: 28px;
+}
+
+/* span {
+    color: #cf0e0e;
+    text-decoration: overline;
+} */
+
+.logo {
+  width: 130px;
+  height: 88px;
+  border-radius: 7px;
+  border: #ffb52d solid 2px;
+}
+
+.search-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.input-search {
+  width: 220px;
+  height: 40px;
+  border-radius: 100px;
+  border: none;
+  padding-left: 10px;
+}
+
+.input-search:focus {
+  outline: none;
+}
+
+.input-search::placeholder {
+  font-family: "Comfortaa", sans-serif;
+  font-weight: bold;
+}
+
+.search {
+  position: absolute;
+  right: 7px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 22px;
+  border-left: 1px solid #808080;
+  cursor: pointer;
+}
+
+.logo-company {
+  display: flex;
+  gap: 7px;
+}
+
+.logo-text {
+  display: flex;
+  align-items: center;
+  font-size: 23px;
+}
+
+.link {
+  font-size: 17px;
+}
+
+.switcher {
+    display: flex;
+}
+
+.switcher a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 30px;
+  font-weight: bold;
+  font-family: "Comfortaa", sans-serif; 
+}
+
+.switch {
+  width: 36px;
+  height: 20px;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+
+.round {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  margin-left: 1px;
+  margin-top: 1px;
+  background-color: white;
+}
