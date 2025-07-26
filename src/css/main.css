@@ -1,6 +1,131 @@
 body {
-    background-image: url('../img/mask-bgc.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: "Comfortaa", sans-serif;
+  background-image: url("../img/mask-bgc.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center top;
+  font-family: "Comfortaa", sans-serif;
+}
+
+.main-container {
+  margin-top: 150px;
+}
+
+.main-button {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.main-button button {
+  width: 200px;
+  height: 50px;
+  color: white;
+  border: none;
+  border-radius: 70px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 5px 10px 40px #6a3e18;
+  background-color: rgb(228 179 43);
+  font-size: 15px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.main-costumes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 650px;
+  height: 45px;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.main-costumes h2 {
+  text-shadow: 10px 7px 8px rgba(0, 0, 0, 0.7);
+  position: relative;
+  color: white;
+  font-size: 2rem;
+  display: inline-block;
+  margin: auto;
+  padding: 5px 15px;
+  border-radius: 8px;
+  -webkit-text-stroke: 1px white;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-top: 7px;
+}
+
+.main-img {
+  width: 310px;
+  height: 405px;
+  border-radius: 20px;
+}
+
+.splide__arrow--next {
+  right: 8em !important;
+}
+
+.splide__arrow--prev {
+  left: 8em !important;
+}
+
+.see-more-slider button {
+  background-color: rgb(228 179 43);
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 5px 10px 40px #6a3e18;
+  width: 350px;
+  height: 60px;
+  border: none;
+  border-radius: 70px;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  font-size: 17px;
+}
+
+.see-more-slider {
+  display: flex;
+  align-items: center;
+}
+
+.see-more {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.see-more button {
+  background-color: rgb(228 179 43);
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 5px 10px 40px #6a3e18;
+  width: 340px;
+  height: 60px;
+  border: none;
+  border-radius: 70px;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+}
+
+.slider-boys {
+  margin-top: 30px;
+}
+
+.slider-girls,
+.slider-adults {
+  margin-top: 50px;
+}
+
+.main-text {
+  width: 1200px;
+  margin: 100px auto;
+  background: linear-gradient(135deg, #ecb835, #f8902f);
+}
+
+.main-text p {
+  color: white;
+  font-weight: bold;
+  text-align: center;
 }

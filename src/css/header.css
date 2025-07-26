@@ -11,9 +11,11 @@ a {
 }
 
 header {
-  position: absolute;
+  position: fixed;
+  top: 0;
   width: 100%;
-  height: 110px;
+  height: 115px;
+  z-index: 1000;
   background: linear-gradient(90deg, #ff7a00de 30%, #ffc300f0 100%);
   background-repeat: no-repeat;
   box-shadow: -10px 10px 30px #9d5519;
@@ -88,7 +90,7 @@ nav {
 .logo-text {
   display: flex;
   align-items: center;
-  font-size: 23px;
+  font-size: 21px;
 }
 
 .link {
@@ -96,7 +98,7 @@ nav {
 }
 
 .switcher {
-    display: flex;
+  display: flex;
 }
 
 .switcher a {
@@ -104,7 +106,7 @@ nav {
   color: #ffffff;
   font-weight: 30px;
   font-weight: bold;
-  font-family: "Comfortaa", sans-serif; 
+  font-family: "Comfortaa", sans-serif;
 }
 
 .switch {
@@ -118,9 +120,9 @@ nav {
 .round {
   display: inline-block;
   width: 17px;
-  height: 17px;
+  height: 16px;
   border-radius: 50%;
   margin-left: 1px;
-  margin-top: 1px;
+  margin-top: 0px;
   background-color: white;
 }
