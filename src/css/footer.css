@@ -1,0 +1,45 @@
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 220px;
+    background-color: #ff6c00;
+    border-top: 2px solid #dc5e00f2;
+}
+
+.footer-container {
+    display: flex;
+    gap: 100px;
+}
+
+footer .logo {
+    width: 210px;
+    height: 140px;
+}
+
+.footer-costumes, .footer-phones, .footer-address, .footer-socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-costumes, .footer-phones, .footer-address {
+    gap: 13px;
+}
+
+.footer-address {
+    text-align: center;
+}
+
+.footer-socials {
+    gap: 10px;
+}
+
+.footer-costumes a {
+    text-decoration: underline;
+}
+
+.footer-socials img {
+    width: 40px;
+    height: 40px;
+}

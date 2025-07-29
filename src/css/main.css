@@ -7,6 +7,17 @@ body {
   font-family: "Comfortaa", sans-serif;
 }
 
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-image: url("../img/mask-bgc.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(3px);
+}
+
 .main-container {
   margin-top: 150px;
 }
@@ -119,8 +130,10 @@ body {
 }
 
 .main-text {
-  width: 1200px;
-  margin: 100px auto;
+  display: flex;
+  align-items: center;
+  height: 300px;
+  margin: 100px 0 auto;
   background: linear-gradient(135deg, #ecb835, #f8902f);
 }
 
@@ -128,4 +141,5 @@ body {
   color: white;
   font-weight: bold;
   text-align: center;
+  font-size: 21px;
 }

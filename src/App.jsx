@@ -1,5 +1,6 @@
 import "./css/header.css";
 import "./css/main.css";
+import "./css/footer.css"
 import logo from "./img/logo.png";
 import search from "./img/search-input.svg";
 import mainBoy from "./img/main-boy.jpg";
@@ -15,9 +16,14 @@ import mainGirl5 from "./img/main-girl5.jpg";
 // import mainAdult from "./img/main-adult.jpg";
 // import mainAdult2 from "./img/main-adult2.jpg";
 // import mainAdult3 from "./img/main-adult3.jpg";
+import facebook from "./img/facebook.svg";
+import instagram from "./img/instagram.svg";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import { MdOutlineAddToPhotos } from "react-icons/md";
+import { TbShirt } from "react-icons/tb";
+import { FiPhone } from "react-icons/fi";
+import { FiMapPin } from "react-icons/fi";
 
 function App() {
   return (
@@ -230,21 +236,19 @@ function App() {
           <div className="main-text">
             <p>
               Маскарад Хаус — світ, де кожен може стати ким завгодно! Відкрийте
-              двері до чарівної казки разом з нами! 
+              двері до чарівної казки разом з нами!
               <br />
-              У нас ви знайдете все — від
-              милих зайчиків і принцес до відьом, піратів, супергероїв та
-              образів на будь-який смак. 
+              У нас ви знайдете все — від милих зайчиків і принцес до відьом,
+              піратів, супергероїв та образів на будь-який смак.
               <br />
-              І не лише для дітей — ми подбали і про
-              дорослих! 
+              І не лише для дітей — ми подбали і про дорослих!
               <br />
-              Свята в садочку, шкільні ранки, Хелловін, Новий рік, Свято
-              осені, День вишиванки — ми завжди готові допомогти обрати
-              ідеальний образ для кожної події. 
+              Свята в садочку, шкільні ранки, Хелловін, Новий рік, Свято осені,
+              День вишиванки — ми завжди готові допомогти обрати ідеальний образ
+              для кожної події.
               <br />
-              Заходьте, обирайте, приміряйте —
-              і нехай ваша дитина (чи ви самі) сяє на святі, мов зірка!
+              Заходьте, обирайте, приміряйте — і нехай ваша дитина (чи ви самі)
+              сяє на святі, мов зірка!
               <br />
               "Маскарад Хаус" — для тих, хто любить чарівність і святкову
               атмосферу! "Маскарад Хаус" — тут починається ваше свято!
@@ -252,6 +256,55 @@ function App() {
           </div>
         </section>
       </main>
+      <footer>
+        <section className="footer-container">
+          <div className="footer-logo">
+            <a className="logo-company" href="">
+              <img className="logo" src={logo} alt="" />
+              <div className="logo-text">
+                Прокат
+                <br />
+                карнавальних
+                <br />
+                костюмів
+              </div>
+            </a>
+          </div>
+          <div className="footer-costumes">
+            <a href="">
+              <TbShirt size="23" />
+              Для хлопчиків
+            </a>
+            <a href="">
+              <TbShirt size="23" />
+              Для дівчаток
+            </a>
+            <a href="">
+              <TbShirt size="23" />
+              Для дорослих
+            </a>
+          </div>
+          <div className="footer-phones">
+            <a href="">
+              <FiPhone size="18" /> 050-551-4125
+            </a>
+            <a href="">
+              <FiPhone size="18" /> 050-956-5080
+            </a>
+          </div>
+          <div className="footer-address">
+            <a href="">
+              <FiMapPin size="23" /> м. Ужгород, Закарпатська область
+              <br />
+                 вулиця Заньковецької, 89
+            </a>
+          </div>
+          <div className="footer-socials">
+            <img src={facebook} alt="" />
+            <img src={instagram} alt="" />
+          </div>
+        </section>
+      </footer>
     </>
   );
 }
