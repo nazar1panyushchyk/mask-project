@@ -19,6 +19,7 @@ body::before {
 }
 
 .main-container {
+  position: relative;
   margin-top: 150px;
 }
 
@@ -135,6 +136,7 @@ body::before {
   height: 300px;
   margin: 100px 0 auto;
   background: linear-gradient(135deg, #ecb835, #f8902f);
+  border-top: 2px solid #e89e14f2;
 }
 
 .main-text p {
@@ -142,4 +144,24 @@ body::before {
   font-weight: bold;
   text-align: center;
   font-size: 21px;
+}
+
+.main-prince {
+  position: absolute;
+  right: 7px;
+  bottom: -200px;
+  background-image: url("../img/prince.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 117px;
+  height: 263px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.main-text p,
+.footer-container,
+.footer-container * {
+  position: relative;
+  /* z-index: 20; */
 }
