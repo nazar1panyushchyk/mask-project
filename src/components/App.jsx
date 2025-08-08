@@ -1,3 +1,6 @@
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import Contacts from "./Contacts";
+import Layout from "./Layout";
 import Modal from "./Modal";
 import React from "react";
 import "../css/header.css";
@@ -7,86 +10,14 @@ import images from "../imageLoader";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import { MdOutlineAddToPhotos } from "react-icons/md";
-import { TbShirt } from "react-icons/tb";
-import { FiPhone } from "react-icons/fi";
-import { FiMapPin } from "react-icons/fi";
+// import { TbShirt } from "react-icons/tb";
+// import { FiPhone } from "react-icons/fi";
+// import { FiMapPin } from "react-icons/fi";
 
-class App extends React.Component {
-  state = {
-    isModalOpen: false,
-  };
-
-  handleOpen = () => {
-    this.setState({ isModalOpen: true });
-  };
-
-  handleClose = () => {
-    this.setState({ isModalOpen: false });
-  };
-
+class Home extends React.Component {
   render() {
     return (
       <>
-        <header>
-          <section className="header-container">
-            <div className="header-links">
-              <a className="logo-company" href="">
-                <img src={images["logo.png"]} alt="" className="logo" />
-                <div className="logo-text">
-                  Прокат
-                  <br />
-                  карнавальних
-                  <br />
-                  костюмів
-                </div>
-              </a>
-              <nav>
-                <a
-                  className="link"
-                  href="main-page"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    window.scrollTo({ top: 0, behavior: "smooth" });
-                  }}
-                >
-                  Головна
-                </a>
-                <a className="link" href="">
-                  Галерея костюмів
-                </a>
-                <a className="link" href="">
-                  Про нас
-                </a>
-                <a className="link" href="">
-                  Контакти
-                </a>
-              </nav>
-              <div className="search-wrapper">
-                <input
-                  className="input-search"
-                  type="text"
-                  placeholder="Пошук костюмів"
-                />
-                <img
-                  src={images["search-input.svg"]}
-                  alt=""
-                  className="search"
-                />
-              </div>
-              <div className="switcher flex">
-                <a href="#">UA</a>
-                <a href="#">
-                  <div className="switch">
-                    <span className="slider round"></span>
-                  </div>
-                </a>
-                <a href="#">ENG</a>
-              </div>
-            </div>
-          </section>
-        </header>
-
-        <main>
           <section className="main-container">
             <div className="main-button">
               <button>Для хлопчиків</button>
@@ -326,85 +257,38 @@ class App extends React.Component {
             </div>
             <div className="main-prince"></div>
           </section>
-        </main>
-        <footer>
-          <section className="footer-container">
-            <div className="footer-logo">
-              <a className="logo-company" href="">
-                <img src={images["logo.png"]} alt="" className="logo" />
-                <div className="logo-text">
-                  Прокат
-                  <br />
-                  карнавальних
-                  <br />
-                  костюмів
-                </div>
-              </a>
-            </div>
-            <div className="footer-costumes">
-              <a href="">
-                <TbShirt size="23" />
-                Для хлопчиків
-              </a>
-              <a href="">
-                <TbShirt size="23" />
-                Для дівчаток
-              </a>
-              <a href="">
-                <TbShirt size="23" />
-                Для дорослих
-              </a>
-            </div>
-            <div className="footer-contacts">
-              <div className="footer-phones">
-                <a href="">
-                  <FiPhone size="18" /> 050-551-4125
-                </a>
-                <a href="">
-                  <FiPhone size="18" /> 050-956-5080
-                </a>
-              </div>
-              <div className="footer-socials">
-                <a
-                  href="https://www.facebook.com/groups/575339462985732/?locale=uk_UA"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src={images["facebook.svg"]} alt="" />
-                </a>
-                <a
-                  href="https://www.instagram.com/maskarad_house_uz/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src={images["instagram.svg"]} alt="" />
-                </a>
-              </div>
-            </div>
-            <div className="footer-address">
-              <p>
-                <FiMapPin size="23" /> м. Ужгород, Закарпатська область
-                <br />
-                вулиця Заньковецької, 89
-                <br />
-                <button onClick={this.handleOpen}>показати на карті</button>
-              </p>
-            </div>
-          </section>
-          <div className="footer-dev">
-            <a
-              href="https://t.me/sherman_hach"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <p>
-                Розробка сайту: <img src={images["telegram.svg"]} alt="" />
-              </p>
-            </a>
-          </div>
-        </footer>
+      </>
+    );
+  }
+}
 
-        <Modal open={this.state.isModalOpen} handleClose={this.handleClose} />
+class App extends React.Component {
+  state = {
+    isModalOpen: false,
+  };
+
+  handleOpen = () => {
+    this.setState({ isModalOpen: true });
+  };
+
+  handleClose = () => {
+    this.setState({ isModalOpen: false });
+  };
+
+  render() {
+    return (
+      <>
+        <BrowserRouter>
+          <Routes>
+            <Route
+              path="/" element={<Layout onOpenModal={this.handleOpen} />}>
+                <Route index element={<Home />} />
+                <Route path="contacts" element={<Contacts />} />
+            </Route>
+          </Routes>
+
+          <Modal open={this.state.isModalOpen} handleClose={this.handleClose} />
+        </BrowserRouter>
       </>
     );
   }

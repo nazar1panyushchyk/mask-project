@@ -15,7 +15,7 @@ body::before {
   background-image: url("../img/mask-bgc.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  filter: blur(3px);
+  filter: blur(4px);
 }
 
 .main-container {
@@ -163,5 +163,5 @@ body::before {
 .footer-container,
 .footer-container * {
   position: relative;
-  /* z-index: 20; */
+  z-index: 20;
 }
