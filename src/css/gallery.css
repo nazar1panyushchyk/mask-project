@@ -1,0 +1,61 @@
+.gallery {
+  margin-top: 150px;
+}
+
+img {
+  width: 335px;
+  height: 480px;
+}
+
+.dropdown {
+  display: flex;
+  justify-content: center;
+}
+
+.dropdown-toggle::after {
+  width: 9px;
+  margin-top: 10px;
+}
+
+.dropdown button {
+  width: 200px;
+  height: 50px;
+  color: white;
+  border: none;
+  border-radius: 70px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 5px 10px 40px #6a3e18;
+  background-color: rgb(228 179 43);
+  font-size: 15px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.gallery-image {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1120px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.gallery h2 {
+  text-shadow: 10px 7px 8px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  padding: 5px 15px;
+  border-radius: 8px;
+  -webkit-text-stroke: 1px white;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    background-color: #704c0a;
+}
+
+.btn-secondary {
+    --bs-btn-hover-bg: #704c0a;
+}

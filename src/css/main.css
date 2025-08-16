@@ -133,10 +133,12 @@ body::before {
 .main-text {
   display: flex;
   align-items: center;
-  height: 300px;
-  margin: 100px 0 auto;
+  margin: 160px 140px 100px auto;
   background: linear-gradient(135deg, #ecb835, #f8902f);
   border-top: 2px solid #e89e14f2;
+  width: 1250px;
+  height: 380px;
+  border-radius: 30px;
 }
 
 .main-text p {
@@ -148,8 +150,8 @@ body::before {
 
 .main-prince {
   position: absolute;
-  right: 7px;
-  bottom: -200px;
+  right: 40px;
+  bottom: -22px;
   background-image: url("../img/prince.svg");
   background-size: cover;
   background-repeat: no-repeat;

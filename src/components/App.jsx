@@ -1,6 +1,7 @@
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Contacts from "./Contacts";
 import Layout from "./Layout";
+import Gallery from "./Gallery";
 import Modal from "./Modal";
 import React from "react";
 import "../css/header.css";
@@ -362,6 +363,7 @@ class App extends React.Component {
             <Route path="/" element={<Layout onOpenModal={this.handleOpen} />}>
               <Route index element={<Home onOpenModal={this.handleOpen} />} />
               <Route path="contacts" element={<Contacts />} />
+              <Route path="gallery" element={<Gallery />} />
             </Route>
           </Routes>
 

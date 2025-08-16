@@ -92,6 +92,10 @@ nav {
   font-size: 17px;
 }
 
+.link.active {
+  border-bottom: 2px solid white;
+}
+
 .switcher {
   display: flex;
 }

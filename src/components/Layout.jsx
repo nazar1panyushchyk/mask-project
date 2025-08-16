@@ -1,4 +1,4 @@
-import { Outlet, Link, useLocation } from "react-router-dom";
+import { Outlet, NavLink, useLocation } from "react-router-dom";
 import images from "../imageLoader";
 import "../css/header.css";
 import "../css/footer.css";
@@ -31,18 +31,22 @@ export default function Layout(props) {
               </div>
             </a>
             <nav>
-              <Link to="/" className="link" onClick={handleHomeClick}>
+              <NavLink
+                to="/"
+                className={({ isActive }) => isActive ? "link active" : "link"}
+                onClick={handleHomeClick}
+              >
                 Головна
-              </Link>
-              <Link to="/gallery" className="link">
+              </NavLink>
+              <NavLink to="/gallery" className="link">
                 Галерея костюмів
-              </Link>
-              <Link to="/about" className="link">
+              </NavLink>
+              <NavLink to="/about" className="link">
                 Про нас
-              </Link>
-              <Link to="/contacts" className="link">
+              </NavLink>
+              <NavLink to="/contacts" className="link">
                 Контакти
-              </Link>
+              </NavLink>
             </nav>
             <div className="search-wrapper">
               <input
@@ -68,7 +72,6 @@ export default function Layout(props) {
       <main>
         <Outlet />
       </main>
-
     </>
   );
 }
