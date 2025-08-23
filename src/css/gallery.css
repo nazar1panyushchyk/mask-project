@@ -3,7 +3,7 @@
 }
 
 img {
-  width: 335px;
+  width: 345px;
   height: 480px;
   margin-bottom: 20px;
 }
@@ -53,10 +53,18 @@ img {
   margin-top: 15px;
 }
 
-.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
-    background-color: #704c0a;
+.btn-check:checked + .btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check) + .btn:active {
+  background-color: #704c0a;
 }
 
 .btn-secondary {
-    --bs-btn-hover-bg: #704c0a;
+  --bs-btn-hover-bg: #704c0a;
+}
+
+.dropdown-item {
+  cursor: pointer;
 }

@@ -33,7 +33,9 @@ export default function Layout(props) {
             <nav>
               <NavLink
                 to="/"
-                className={({ isActive }) => isActive ? "link active" : "link"}
+                className={({ isActive }) =>
+                  isActive ? "link active" : "link"
+                }
                 onClick={handleHomeClick}
               >
                 Головна
@@ -72,6 +74,7 @@ export default function Layout(props) {
       <main>
         <Outlet />
       </main>
+
     </>
   );
 }

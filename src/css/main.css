@@ -161,9 +161,7 @@ body::before {
   pointer-events: none;
 }
 
-.main-text p,
-.footer-container,
-.footer-container * {
+.main-text p {
   position: relative;
   z-index: 20;
 }

@@ -326,15 +326,20 @@ class Home extends React.Component {
             </div>
           </section>
           <div className="footer-dev">
-            <a
-              href="https://t.me/sherman_hach"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <p>
-                Розробка сайту: <img src={images["telegram.svg"]} alt="" />
-              </p>
-            </a>
+            <div className="footer-rights">
+              <p>© 2025 Maskarad House. Всі права захищені.</p>
+            </div>
+            <div className="site-dev">
+              <a
+                href="https://t.me/sherman_hach"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <p>
+                  Розробка сайту: <img src={images["telegram.svg"]} alt="" />
+                </p>
+              </a>
+            </div>
           </div>
         </footer>
       </>

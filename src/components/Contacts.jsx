@@ -51,14 +51,15 @@ export default class Contacts extends React.Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={images["facebook.svg"]} alt="" /> Facebook
+              <img src={images["facebook.svg"]} alt="" /> <p>Facebook</p>
             </a>
             <a
               href="https://www.instagram.com/maskarad_house_uz/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img className="instagram" src={images["instagram.svg"]} alt="" /> Instagram
+              <img className="instagram" src={images["instagram.svg"]} alt="" />{" "}
+              <p>Instagram</p>
             </a>
           </div>
           <div className="schedule">

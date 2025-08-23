@@ -30,7 +30,6 @@ export default class Gallery extends React.Component {
             <li>
               <a
                 className="dropdown-item"
-                href="#"
                 onClick={() => this.handleCategory("Овочі, фрукти, гриби")}
               >
                 Овочі, фрукти, гриби
@@ -39,7 +38,6 @@ export default class Gallery extends React.Component {
             <li>
               <a
                 className="dropdown-item"
-                href="#"
                 onClick={() => this.handleCategory("Звірята")}
               >
                 Звірята
@@ -48,8 +46,7 @@ export default class Gallery extends React.Component {
             <li>
               <a
                 className="dropdown-item"
-                href="#"
-                onClick={() => this.handleCategory(categoryName)}
+                onClick={() => this.handleCategory("Новий рік")}
               >
                 Новий рік
               </a>
@@ -57,8 +54,7 @@ export default class Gallery extends React.Component {
             <li>
               <a
                 className="dropdown-item"
-                href="#"
-                onClick={() => this.handleCategory(categoryName)}
+                onClick={() => this.handleCategory("Квіти, природні явища")}
               >
                 Квіти, природні явища
               </a>
@@ -66,8 +62,7 @@ export default class Gallery extends React.Component {
             <li>
               <a
                 className="dropdown-item"
-                href="#"
-                onClick={() => this.handleCategory(categoryName)}
+                onClick={() => this.handleCategory("Свято осені")}
               >
                 Свято осені
               </a>
@@ -75,8 +70,7 @@ export default class Gallery extends React.Component {
             <li>
               <a
                 className="dropdown-item"
-                href="#"
-                onClick={() => this.handleCategory(categoryName)}
+                onClick={() => this.handleCategory("Хелловін")}
               >
                 Хелловін
               </a>
@@ -84,8 +78,7 @@ export default class Gallery extends React.Component {
             <li>
               <a
                 className="dropdown-item"
-                href="#"
-                onClick={() => this.handleCategory(categoryName)}
+                onClick={() => this.handleCategory("Казкові, мультегерої")}
               >
                 Казкові, мультгерої
               </a>
@@ -93,8 +86,7 @@ export default class Gallery extends React.Component {
             <li>
               <a
                 className="dropdown-item"
-                href="#"
-                onClick={() => this.handleCategory(categoryName)}
+                onClick={() => this.handleCategory("Ляльки, цукерки")}
               >
                 Ляльки, цукерки
               </a>
@@ -102,8 +94,7 @@ export default class Gallery extends React.Component {
             <li>
               <a
                 className="dropdown-item"
-                href="#"
-                onClick={() => this.handleCategory(categoryName)}
+                onClick={() => this.handleCategory("Пірати, моряки, солдати")}
               >
                 Пірати, моряки, солдати
               </a>
@@ -111,8 +102,7 @@ export default class Gallery extends React.Component {
             <li>
               <a
                 className="dropdown-item"
-                href="#"
-                onClick={() => this.handleCategory(categoryName)}
+                onClick={() => this.handleCategory("Принци, королі, мушкетери")}
               >
                 Принци, королі, мушкетери
               </a>
@@ -120,8 +110,7 @@ export default class Gallery extends React.Component {
             <li>
               <a
                 className="dropdown-item"
-                href="#"
-                onClick={() => this.handleCategory(categoryName)}
+                onClick={() => this.handleCategory("Ангели")}
               >
                 Ангели
               </a>
@@ -129,8 +118,7 @@ export default class Gallery extends React.Component {
             <li>
               <a
                 className="dropdown-item"
-                href="#"
-                onClick={() => this.handleCategory(categoryName)}
+                onClick={() => this.handleCategory("Народні костюми")}
               >
                 Народні костюми
               </a>
@@ -138,8 +126,7 @@ export default class Gallery extends React.Component {
             <li>
               <a
                 className="dropdown-item"
-                href="#"
-                onClick={() => this.handleCategory(categoryName)}
+                onClick={() => this.handleCategory("Сукні")}
               >
                 Сукні
               </a>
@@ -147,8 +134,7 @@ export default class Gallery extends React.Component {
             <li>
               <a
                 className="dropdown-item"
-                href="#"
-                onClick={() => this.handleCategory(categoryName)}
+                onClick={() => this.handleCategory("Східні, китайські костюми")}
               >
                 Східні, китайські костюми
               </a>
