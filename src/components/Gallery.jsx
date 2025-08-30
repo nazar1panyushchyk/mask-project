@@ -78,9 +78,9 @@ export default class Gallery extends React.Component {
             <li>
               <a
                 className="dropdown-item"
-                onClick={() => this.handleCategory("Казкові, мультегерої")}
+                onClick={() => this.handleCategory("Казкові, мульт, супергерої")}
               >
-                Казкові, мультгерої
+                Казкові, мульт, супергерої
               </a>
             </li>
             <li>

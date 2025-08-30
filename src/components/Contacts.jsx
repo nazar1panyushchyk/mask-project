@@ -40,7 +40,7 @@ export default class Contacts extends React.Component {
             <br />
             вулиця Заньковецької, 89
             <br />
-            (приміщення УжНУ, праворуч від "Тевіант")
+            (приміщення УжНУ)
           </div>
           <div className="socials">
             <p>

@@ -1,4 +1,5 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import ScrollToTop from "./ScrollToTop";
 import Contacts from "./Contacts";
 import Layout from "./Layout";
 import Gallery from "./Gallery";
@@ -81,18 +82,22 @@ class Home extends React.Component {
                     className="main-img"
                   />
                   <div className="see-more-slider">
-                    <button>
-                      Натисніть,
-                      <br />
-                      щоб побачити усі костюми{" "}
-                      <MdOutlineAddToPhotos size="25" />
-                    </button>
+                    <Link to="/gallery">
+                      <button>
+                        Натисніть,
+                        <br />
+                        щоб побачити усі костюми
+                        <MdOutlineAddToPhotos size="25" />
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </SplideSlide>
             </Splide>
             <div className="see-more">
-              <button>Побачити все</button>
+              <Link to="/gallery">
+                <button>Побачити все</button>
+              </Link>
             </div>
           </div>
           <div className="slider-girls">
@@ -151,18 +156,22 @@ class Home extends React.Component {
                     className="main-img"
                   />
                   <div className="see-more-slider">
-                    <button>
-                      Натисніть,
-                      <br />
-                      щоб побачити усі костюми{" "}
-                      <MdOutlineAddToPhotos size="25" />
-                    </button>
+                    <Link to="/gallery">
+                      <button>
+                        Натисніть,
+                        <br />
+                        щоб побачити усі костюми
+                        <MdOutlineAddToPhotos size="25" />
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </SplideSlide>
             </Splide>
             <div className="see-more">
-              <button>Побачити все</button>
+              <Link to="/gallery">
+                <button>Побачити все</button>
+              </Link>
             </div>
           </div>
           <div className="slider-adults">
@@ -221,18 +230,22 @@ class Home extends React.Component {
                     className="main-img"
                   />
                   <div className="see-more-slider">
-                    <button>
-                      Натисніть,
-                      <br />
-                      щоб побачити усі костюми{" "}
-                      <MdOutlineAddToPhotos size="25" />
-                    </button>
+                    <Link to="/gallery">
+                      <button>
+                        Натисніть,
+                        <br />
+                        щоб побачити усі костюми
+                        <MdOutlineAddToPhotos size="25" />
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </SplideSlide>
             </Splide>
             <div className="see-more">
-              <button>Побачити все</button>
+              <Link to="/gallery">
+                <button>Побачити все</button>
+              </Link>
             </div>
           </div>
           <div className="main-text">
@@ -320,7 +333,7 @@ class Home extends React.Component {
                 вулиця Заньковецької, 89
                 <br />
                 <button onClick={this.props.onOpenModal}>
-                  показати на карті
+                  переглянути на карті
                 </button>
               </p>
             </div>
@@ -364,6 +377,7 @@ class App extends React.Component {
     return (
       <>
         <BrowserRouter>
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<Layout onOpenModal={this.handleOpen} />}>
               <Route index element={<Home onOpenModal={this.handleOpen} />} />
