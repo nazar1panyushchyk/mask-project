@@ -33,8 +33,10 @@ export default function Layout(props) {
             <nav>
               <NavLink
                 to="/"
-                className={({ isActive }) =>
-                  isActive ? "link active" : "link"
+                className={() =>
+                  ["/", "/boys"].includes(location.pathname)
+                    ? "link active"
+                    : "link"
                 }
                 onClick={handleHomeClick}
               >
@@ -74,7 +76,6 @@ export default function Layout(props) {
       <main>
         <Outlet />
       </main>
-
     </>
   );
 }

@@ -4,6 +4,7 @@ import Contacts from "./Contacts";
 import Layout from "./Layout";
 import Gallery from "./Gallery";
 import Modal from "./Modal";
+import Boys from "./Boys";
 import React from "react";
 import "../css/header.css";
 import "../css/main.css";
@@ -22,7 +23,9 @@ class Home extends React.Component {
       <>
         <section className="main-container">
           <div className="main-button">
-            <button>Для хлопчиків</button>
+            <Link to="boys">
+              <button>Для хлопчиків</button>
+            </Link>
             <button>Для дівчаток</button>
             <button>Для дорослих</button>
           </div>
@@ -287,10 +290,10 @@ class Home extends React.Component {
               </a>
             </div>
             <div className="footer-costumes">
-              <a href="">
+              <Link to="boys">
                 <TbShirt size="23" />
                 Для хлопчиків
-              </a>
+              </Link>
               <a href="">
                 <TbShirt size="23" />
                 Для дівчаток
@@ -344,7 +347,7 @@ class Home extends React.Component {
             </div>
             <div className="site-dev">
               <a
-                href="https://t.me/sherman_hach"
+                href="https://t.me/sherman_99"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -383,6 +386,7 @@ class App extends React.Component {
               <Route index element={<Home onOpenModal={this.handleOpen} />} />
               <Route path="contacts" element={<Contacts />} />
               <Route path="gallery" element={<Gallery />} />
+              <Route path="boys" element={<Boys onOpenModal={this.handleOpen} />} />
             </Route>
           </Routes>
 
