@@ -5,6 +5,8 @@ import Layout from "./Layout";
 import Gallery from "./Gallery";
 import Modal from "./Modal";
 import Boys from "./Boys";
+import Girls from "./Girls";
+import Adults from "./Adults";
 import React from "react";
 import "../css/header.css";
 import "../css/main.css";
@@ -18,7 +20,23 @@ import { FiPhone } from "react-icons/fi";
 import { FiMapPin } from "react-icons/fi";
 
 class Home extends React.Component {
+  state = {
+    page: "home",
+  };
+
+  setPage = (page) => {
+    this.setState({ page })
+  }
   render() {
+    const { page } = this.state;
+
+    let content;
+    if (page === "gallery") content = <Gallery />;
+    else if (page === "contacts") content = <Contacts />;
+    else if (page === "boys") content = <Boys />;
+    else if (page === "girls") content = <Girls />;
+    else if (page === "adults") content = <Adults />;
+    else content = <h1>Головна сторінка</h1>;
     return (
       <>
         <section className="main-container">
@@ -26,8 +44,12 @@ class Home extends React.Component {
             <Link to="boys">
               <button>Для хлопчиків</button>
             </Link>
-            <button>Для дівчаток</button>
-            <button>Для дорослих</button>
+            <Link to="girls">
+              <button>Для дівчаток</button>
+            </Link>
+            <Link to="adults">
+              <button>Для дорослих</button>
+            </Link>
           </div>
           <div className="slider-boys">
             <div className="main-costumes">
@@ -198,18 +220,30 @@ class Home extends React.Component {
                   }}
                 >
                   <img
-                    src={images["main-boy.jpg"]}
-                    alt="main boy"
+                    src={
+                      images[
+                        "486962400_2456634304701437_8987871432419796634_n.jpg"
+                      ]
+                    }
+                    alt="main adult"
                     className="main-img"
                   />
                   <img
-                    src={images["main-boy2.jpg"]}
-                    alt="main boy2"
+                    src={
+                      images[
+                        "474625269_3900588213538098_5518154689704963857_n.jpg"
+                      ]
+                    }
+                    alt="main adult"
                     className="main-img"
                   />
                   <img
-                    src={images["main-boy3.jpg"]}
-                    alt="main boy3"
+                    src={
+                      images[
+                        "473994028_3893687740894812_4410140334531494740_n.jpg"
+                      ]
+                    }
+                    alt="main adult"
                     className="main-img"
                   />
                 </div>
@@ -223,13 +257,21 @@ class Home extends React.Component {
                   }}
                 >
                   <img
-                    src={images["main-boy4.jpg"]}
-                    alt="main boy4"
+                    src={
+                      images[
+                        "482026052_2443385886007826_4018589056247490160_n.jpg"
+                      ]
+                    }
+                    alt="main adult"
                     className="main-img"
                   />
                   <img
-                    src={images["main-boy5.jpg"]}
-                    alt="main boy5"
+                    src={
+                      images[
+                        "495375937_9858223057598941_4653009698611466589_n.jpg"
+                      ]
+                    }
+                    alt="main adult"
                     className="main-img"
                   />
                   <div className="see-more-slider">
@@ -290,18 +332,18 @@ class Home extends React.Component {
               </a>
             </div>
             <div className="footer-costumes">
-              <Link to="boys">
+              <Link to="/boys">
                 <TbShirt size="23" />
                 Для хлопчиків
               </Link>
-              <a href="">
+               <Link to="/girls">
                 <TbShirt size="23" />
                 Для дівчаток
-              </a>
-              <a href="">
+              </Link>
+               <Link to="/adults">
                 <TbShirt size="23" />
                 Для дорослих
-              </a>
+              </Link>
             </div>
             <div className="footer-contacts">
               <div className="footer-phones">
@@ -386,7 +428,18 @@ class App extends React.Component {
               <Route index element={<Home onOpenModal={this.handleOpen} />} />
               <Route path="contacts" element={<Contacts />} />
               <Route path="gallery" element={<Gallery />} />
-              <Route path="boys" element={<Boys onOpenModal={this.handleOpen} />} />
+              <Route
+                path="boys"
+                element={<Boys onOpenModal={this.handleOpen} />}
+              />
+              <Route
+                path="girls"
+                element={<Girls onOpenModal={this.handleOpen} />}
+              />
+              <Route
+                path="adults"
+                element={<Adults onOpenModal={this.handleOpen} />}
+              />
             </Route>
           </Routes>
 

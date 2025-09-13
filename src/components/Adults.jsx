@@ -9,166 +9,178 @@ import "../css/costumes.css";
 import { TbShirt } from "react-icons/tb";
 import { FiPhone, FiMapPin } from "react-icons/fi";
 
-export default class Boys extends React.Component {
+export default class Adults extends React.Component {
   render() {
     return (
       <>
         <section className="main-container">
           <div className="main-button">
-            <Link to="#">
+            <Link to="/boys">
               <button>Для хлопчиків</button>
             </Link>
             <Link to="/girls">
               <button>Для дівчаток</button>
             </Link>
-            <Link to="/adults">
+            <Link to="#">
               <button>Для дорослих</button>
             </Link>
           </div>
           <div className="main-content">
             <div className="main-costumes">
-              <h2>Костюми для хлопчиків</h2>
+              <h2>Костюми для дорослих</h2>
             </div>
             <div className="costumes-image">
               <img
-                src={images["main-boy.jpg"]}
-                alt="main boy"
+                src={
+                  images["486962400_2456634304701437_8987871432419796634_n.jpg"]
+                }
+                alt="main adult"
                 className="main-img"
               />
               <img
-                src={images["main-boy2.jpg"]}
-                alt="main boy"
+                src={
+                  images["474625269_3900588213538098_5518154689704963857_n.jpg"]
+                }
+                alt="main adult"
                 className="main-img"
               />
               <img
-                src={images["main-boy3.jpg"]}
-                alt="main boy"
+                src={
+                  images["473994028_3893687740894812_4410140334531494740_n.jpg"]
+                }
+                alt="main adult"
                 className="main-img"
               />
               <img
-                src={images["main-boy4.jpg"]}
-                alt="main boy"
+                src={
+                  images["482026052_2443385886007826_4018589056247490160_n.jpg"]
+                }
+                alt="main adult"
                 className="main-img"
               />
               <img
-                src={images["main-boy5.jpg"]}
-                alt="main boy"
+                src={
+                  images["495375937_9858223057598941_4653009698611466589_n.jpg"]
+                }
+                alt="main adult"
                 className="main-img"
               />
               <img
                 src={
                   images[
-                    "514028628_23986557917672218_6519482903421694482_n.jpg"
+                    "514277018_23993052487022761_7832565373468687738_n.jpg"
                   ]
                 }
-                alt="main boy"
-                className="main-img"
-              />
-              <img
-                src={
-                  images["131923146_3645000545587921_1025429878307161822_n.jpg"]
-                }
-                alt="main boy"
-                className="main-img"
-              />
-              <img
-                src={
-                  images["489431037_9614327898655126_4522561375937856262_n.jpg"]
-                }
-                alt="main boy"
-                className="main-img"
-              />
-              <img
-                src={
-                  images["473619411_3893691500894436_5044462791315566976_n.jpg"]
-                }
-                alt="main boy"
-                className="main-img"
-              />
-              <img
-                src={
-                  images["497598622_9852526134835300_5207891267889081940_n.jpg"]
-                }
-                alt="main boy"
-                className="main-img"
-              />
-              <img
-                src={
-                  images["481983992_2401667190182897_5195417686428714161_n.jpg"]
-                }
-                alt="main boy"
-                className="main-img"
-              />
-              <img
-                src={
-                  images["475233769_3903250043271915_1747979611002738327_n.jpg"]
-                }
-                alt="main boy"
-                className="main-img"
-              />
-              <img
-                src={
-                  images["481080961_8048921371899498_148741910745775509_n.jpg"]
-                }
-                alt="main boy"
-                className="main-img"
-              />
-              <img
-                src={
-                  images["486306579_3950517685211817_2922505453447509460_n.jpg"]
-                }
-                alt="main boy"
-                className="main-img"
-              />
-              <img
-                src={
-                  images["497521227_9885948238159756_6906962024370149816_n.jpg"]
-                }
-                alt="main boy"
-                className="main-img"
-              />
-              <img
-                src={
-                  images["473616687_3893689544227965_1690530013388880830_n.jpg"]
-                }
-                alt="main boy"
-                className="main-img"
-              />
-              <img
-                src={
-                  images["489695047_9614325911988658_3050750351257462171_n.jpg"]
-                }
-                alt="main boy"
-                className="main-img"
-              />
-              <img
-                src={
-                  images["475308426_3903285523268367_556020067069813822_n.jpg"]
-                }
-                alt="main boy"
-                className="main-img"
-              />
-              <img
-                src={
-                  images["474625266_3900607666869486_2533528418436916549_n.jpg"]
-                }
-                alt="main boy"
-                className="main-img"
-              />
-              <img
-                src={
-                  images["480741269_2646712272385390_3323046558769580513_n.jpg"]
-                }
-                alt="main boy"
+                alt="main adult"
                 className="main-img"
               />
               <img
                 src={
                   images[
-                    "514661973_24005286225799387_5187391148201852523_n.jpg"
+                    "514277854_24004988872495789_4353467111188391412_n.jpg"
                   ]
                 }
-                alt="main boy"
+                alt="main adult"
+                className="main-img"
+              />
+              <img
+                src={
+                  images["257379137_3022787721318156_6091193901633390303_n.jpg"]
+                }
+                alt="main adult"
+                className="main-img"
+              />
+              <img
+                src={
+                  images["473997773_3893688077561445_1985978697867744262_n.jpg"]
+                }
+                alt="main adult"
+                className="main-img"
+              />
+              <img
+                src={
+                  images["474061135_3893687737561479_4901661581263276251_n.jpg"]
+                }
+                alt="main adult"
+                className="main-img"
+              />
+              <img
+                src={
+                  images["474014329_3893688040894782_1328244302431919067_n.jpg"]
+                }
+                alt="main adult"
+                className="main-img"
+              />
+              <img
+                src={
+                  images["473615356_3893687944228125_2250382546587199688_n.jpg"]
+                }
+                alt="main adult"
+                className="main-img"
+              />
+              <img
+                src={
+                  images["473616687_3893688060894780_1975288589734303008_n.jpg"]
+                }
+                alt="main adult"
+                className="main-img"
+              />
+              <img
+                src={
+                  images["475742149_9203727333048520_3311363075579697231_n.jpg"]
+                }
+                alt="main adult"
+                className="main-img"
+              />
+              <img
+                src={
+                  images["475810568_9203727339715186_1684892097687938683_n.jpg"]
+                }
+                alt="main adult"
+                className="main-img"
+              />
+              <img
+                src={
+                  images[
+                    "515074334_24003734919287851_7337668467363067280_n.jpg"
+                  ]
+                }
+                alt="main adult"
+                className="main-img"
+              />
+              <img
+                src={
+                  images["482072919_3939435856320000_8016707450508592612_n.jpg"]
+                }
+                alt="main adult"
+                className="main-img"
+              />
+              <img
+                src={
+                  images["475173832_3900588500204736_8357979720771977298_n.jpg"]
+                }
+                alt="main adult"
+                className="main-img"
+              />
+              <img
+                src={
+                  images["473599726_3893687027561550_2119981210410852564_n.jpg"]
+                }
+                alt="main adult"
+                className="main-img"
+              />
+              <img
+                src={
+                  images["473617231_3893687034228216_8647008083291763591_n.jpg"]
+                }
+                alt="main adult"
+                className="main-img"
+              />
+              <img
+                src={
+                  images["257715359_3022759421320986_6135878157635833979_n.jpg"]
+                }
+                alt="main adult"
                 className="main-img"
               />
             </div>

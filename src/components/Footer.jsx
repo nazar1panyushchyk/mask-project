@@ -21,18 +21,18 @@ export default function Footer({ onOpenModal }) {
           </a>
         </div>
         <div className="footer-costumes">
-          <Link to="boys">
+          <Link to="/boys">
             <TbShirt size="23" />
             Для хлопчиків
           </Link>
-          <a href="">
+          <Link to="/girls">
             <TbShirt size="23" />
             Для дівчаток
-          </a>
-          <a href="">
+          </Link>
+          <Link to="/adults">
             <TbShirt size="23" />
             Для дорослих
-          </a>
+          </Link>
         </div>
         <div className="footer-contacts">
           <div className="footer-phones">

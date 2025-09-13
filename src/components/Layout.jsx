@@ -34,7 +34,7 @@ export default function Layout(props) {
               <NavLink
                 to="/"
                 className={() =>
-                  ["/", "/boys"].includes(location.pathname)
+                  ["/", "/boys", "/girls", "/adults"].includes(location.pathname)
                     ? "link active"
                     : "link"
                 }
