@@ -5,7 +5,7 @@ import "../css/footer.css";
 import { TbShirt } from "react-icons/tb";
 import { FiPhone, FiMapPin } from "react-icons/fi";
 
-export default function Layout(props) {
+export default function Layout() {
   const location = useLocation();
 
   const handleHomeClick = (e) => {

@@ -3,6 +3,8 @@ import images from "../imageLoader";
 import "../css/footer.css";
 import { TbShirt } from "react-icons/tb";
 import { FiPhone, FiMapPin } from "react-icons/fi";
+import { RxDividerVertical } from "react-icons/rx";
+import { FaFacebook, FaInstagram } from "react-icons/fa6";
 
 export default function Footer({ onOpenModal }) {
   return (
@@ -45,18 +47,18 @@ export default function Footer({ onOpenModal }) {
           </div>
           <div className="footer-socials">
             <a
-              href="https://www.facebook.com/groups/575339462985732/?locale=uk_UA"
+              href="https://www.facebook.com/groups/575339462985732/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={images["facebook.svg"]} alt="" />
+              <FaFacebook style={{ width: "28px", height: "28px" }} />
             </a>
             <a
               href="https://www.instagram.com/maskarad_house_uz/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={images["instagram.svg"]} alt="" />
+              <FaInstagram style={{ width: "30px", height: "30px" }} />
             </a>
           </div>
         </div>
@@ -71,19 +73,22 @@ export default function Footer({ onOpenModal }) {
         </div>
       </section>
       <div className="footer-dev">
-        <div className="footer-rights">
-          <p>© 2025 Maskarad House. Всі права захищені.</p>
-        </div>
-        <div className="site-dev">
-          <a
-            href="https://t.me/sherman_99"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <p>
-              Розробка сайту: <img src={images["telegram.svg"]} alt="" />
-            </p>
-          </a>
+        <div className="footer-dev-text">
+          <div className="footer-rights">
+            <p>© 2025 Maskarad House. Всі права захищені.</p>
+          </div>
+          <RxDividerVertical style={{ height: "21px", width: "21px" }} />
+          <div className="site-dev">
+            <a
+              href="https://t.me/sherman_99"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p>
+                Розробка сайту: <img src={images["telegram.svg"]} alt="" />
+              </p>
+            </a>
+          </div>
         </div>
       </div>
     </footer>

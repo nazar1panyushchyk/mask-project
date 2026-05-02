@@ -1,6 +1,6 @@
-import * as React from "react";
 import Box from "@mui/material/Box";
 import MuiModal from "@mui/material/Modal";
+import { useEffect } from "react";
 
 const style = {
   position: "absolute",
@@ -15,8 +15,7 @@ const style = {
 };
 
 export default function BasicModal({ open, handleClose }) {
-
-     React.useEffect(() => {
+     useEffect(() => {
        if (open) {
          document.body.style.overflow = "hidden";
        } else {

@@ -1,45 +1,72 @@
 .contacts-container {
-  display: flex;
-  justify-content: center;
-  margin: 150px 105px 0 105px;
-  color: white;
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1.25fr 0.85fr;
+  width: min(1120px, calc(100% - 48px));
+  margin: 130px auto 80px;
+  color: #251b2b;
+  text-align: left;
+  background: #ffffff;
+  border: 1px solid rgba(216, 155, 34, 0.22);
+  border-radius: 18px;
+  box-shadow: 0 14px 34px rgba(37, 27, 43, 0.07);
+  overflow: hidden;
+}
+
+.contacts-container span {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: #4b244a;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.map iframe {
+  display: block;
+  width: 100%;
+  height: 620px;
+  border: 0;
 }
 
 .info {
-  background: linear-gradient(90deg, #ff7a00de 30%, #ffc300f0 100%);
-  width: 450px;
-  height: 555px;
-  border-radius: 0 20px 20px 0;
+  width: auto;
+  height: auto;
+  min-height: 520px;
+  padding: 36px 34px;
+  background: #fffaf3;
+  border-radius: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
 }
 
 .phones {
   display: flex;
   flex-direction: column;
-}
-
-.second-phone {
-  margin: 5px 0 0 30px;
+  gap: 5px;
 }
 
 .socials {
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 
 .socials a {
-  display: flex;
-  justify-content: center;
+  width: fit-content;
+  display: inline-flex;
   align-items: center;
+  gap: 8px;
 }
 
 .socials p {
-  margin-left: 5px;
+  margin: 0;
 }
 
 .socials img {
-  width: 46px;
-  height: 46px;
+  width: 32px;
+  height: 32px;
 }
 
 .instagram {
@@ -50,17 +77,25 @@
 .address,
 .socials,
 .schedule {
-  margin-top: 8px;
-  font-weight: bold;
+  margin-top: 0;
+  font-size: 15px;
+  line-height: 1.6;
+  font-weight: 500;
 }
 
-span {
-  font-size: 19px;
-  font-weight: bold;
-  text-decoration: underline;
+.phones a,
+.socials a {
+  color: #251b2b;
+  font-size: 15px;
+  font-weight: 600;
 }
 
-.girl-image {
+.phones a:hover,
+.socials a:hover {
+  color: #d89b22;
+}
+
+/* .girl-image {
   position: relative;
   background-image: url("../img/contacts2girl.svg");
   background-size: cover;
@@ -78,4 +113,4 @@ span {
   height: 350px;
   left: 60px;
   top: 80px;
-}
+} */

@@ -1,13 +1,15 @@
-html, body {
+html,
+body {
   scroll-behavior: auto !important;
 }
 
 body {
-  background-image: url("../img/mask-bgc.jpg");
+  /* background-image: url("../img/mask-bgc.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-position: center top;
+  background-position: center top; */
+  background: #fff8ec;
   font-family: "Comfortaa", sans-serif;
 }
 
@@ -16,10 +18,41 @@ body::before {
   position: fixed;
   inset: 0;
   z-index: -1;
-  background-image: url("../img/mask-bgc.jpg");
+  /* background-image: url("../img/mask-bgc.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  filter: blur(4px);
+  filter: blur(4px); */
+  background: #fff8ec;
+}
+
+.btn-primary button {
+  min-width: 180px;
+  height: 46px;
+  padding: 0 24px;
+  border: none;
+  border-radius: 999px;
+  background: #d89b22;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(216, 155, 34, 0.25);
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.btn-primary button:hover {
+  background: #b87912;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(184, 121, 18, 0.3);
+}
+
+.btn-primary button:active {
+  transform: translateY(0);
+  box-shadow: 0 5px 12px rgba(184, 121, 18, 0.25);
 }
 
 .main-container {
@@ -34,17 +67,9 @@ body::before {
 }
 
 .main-button button {
-  width: 200px;
-  height: 50px;
-  color: white;
-  border: none;
-  border-radius: 70px;
-  font-weight: bold;
-  cursor: pointer;
-  box-shadow: 5px 10px 40px #6a3e18;
-  background-color: rgb(228 179 43);
-  font-size: 15px;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  width: 190px;
+  height: 46px;
+  font-size: 14px;
 }
 
 .main-costumes {
@@ -58,18 +83,14 @@ body::before {
 }
 
 .main-costumes h2 {
-  text-shadow: 10px 7px 8px rgba(0, 0, 0, 0.7);
   position: relative;
-  color: white;
-  font-size: 2rem;
+  color: #4b244a;
+  font-size: 30px;
   display: inline-block;
-  margin: auto;
   padding: 5px 15px;
   border-radius: 8px;
-  -webkit-text-stroke: 1px white;
-  font-size: 2.2rem;
   font-weight: 700;
-  margin-top: 7px;
+  margin: 0;
 }
 
 .main-img {
@@ -87,17 +108,10 @@ body::before {
 }
 
 .see-more-slider button {
-  background-color: rgb(228 179 43);
-  font-weight: bold;
-  cursor: pointer;
-  box-shadow: 5px 10px 40px #6a3e18;
-  width: 350px;
-  height: 60px;
-  border: none;
-  border-radius: 70px;
-  color: white;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-  font-size: 17px;
+  width: 260px;
+  min-height: 58px;
+  padding: 0 20px;
+  font-size: 15px;
 }
 
 .see-more-slider {
@@ -112,17 +126,9 @@ body::before {
 }
 
 .see-more button {
-  background-color: rgb(228 179 43);
-  font-weight: bold;
-  cursor: pointer;
-  box-shadow: 5px 10px 40px #6a3e18;
-  width: 340px;
-  height: 60px;
-  border: none;
-  border-radius: 70px;
-  color: white;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-  font-size: 20px;
+  width: 240px;
+  height: 50px;
+  font-size: 15px;
 }
 
 .slider-boys {
@@ -137,25 +143,34 @@ body::before {
 .main-text {
   display: flex;
   align-items: center;
-  margin: 160px 140px 100px auto;
-  background: linear-gradient(135deg, #ecb835, #f8902f);
-  border-top: 2px solid #e89e14f2;
-  width: 1250px;
-  height: 380px;
-  border-radius: 30px;
+  width: min(1100px, calc(100% - 48px));
+  margin: 96px auto 80px;
+  padding: 40px 48px;
+  background: #ffffff;
+  border: 1px solid rgba(216, 155, 34, 0.22);
+  border-radius: 18px;
+  box-shadow: 0 16px 40px rgba(37, 27, 43, 0.08);
 }
 
 .main-text p {
-  color: white;
-  font-weight: bold;
-  text-align: center;
-  font-size: 21px;
+  position: relative;
+  z-index: 20;
+  color: #251b2b;
+  font-size: 17px;
+  line-height: 1.75;
+  font-weight: 500;
+  text-align: left;
+}
+
+.main-text span {
+  color: #4b244a;
+  font-weight: 700;
 }
 
 .main-prince {
   position: absolute;
-  right: 40px;
-  bottom: -22px;
+  right: 125px;
+  bottom: -10px;
   background-image: url("../img/prince.svg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -163,9 +178,4 @@ body::before {
   height: 263px;
   z-index: 10;
   pointer-events: none;
-}
-
-.main-text p {
-  position: relative;
-  z-index: 20;
 }
