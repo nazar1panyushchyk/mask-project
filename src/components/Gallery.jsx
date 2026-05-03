@@ -7,7 +7,7 @@ export default function Gallery() {
   const [selectedCategory, setSelectedCategory] = useState(null);
 
   const handleCategory = (categoryName) => {
-    setSelectedCategory({ selectedCategory: categoryName });
+    setSelectedCategory(categoryName);
   };
 
   const categories = [...new Set(galleryData.map((item) => item.category))];

@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1.25fr 0.85fr;
   width: min(1120px, calc(100% - 48px));
-  margin: 130px auto 80px;
+  margin: 130px auto 50px;
   color: #251b2b;
   text-align: left;
   background: #ffffff;
