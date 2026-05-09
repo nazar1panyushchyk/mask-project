@@ -4,11 +4,6 @@ body {
 }
 
 body {
-  /* background-image: url("../img/mask-bgc.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center top; */
   background: #fff8ec;
   font-family: "Comfortaa", sans-serif;
 }
@@ -18,14 +13,13 @@ body::before {
   position: fixed;
   inset: 0;
   z-index: -1;
-  /* background-image: url("../img/mask-bgc.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  filter: blur(4px); */
   background: #fff8ec;
 }
 
-.btn-primary button {
+.link-primary a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-width: 180px;
   height: 46px;
   padding: 0 24px;
@@ -44,13 +38,13 @@ body::before {
     box-shadow 0.2s ease;
 }
 
-.btn-primary button:hover {
+.link-primary a:hover {
   background: #b87912;
   transform: translateY(-1px);
   box-shadow: 0 10px 22px rgba(184, 121, 18, 0.3);
 }
 
-.btn-primary button:active {
+.link-primary a:active {
   transform: translateY(0);
   box-shadow: 0 5px 12px rgba(184, 121, 18, 0.25);
 }
@@ -66,7 +60,10 @@ body::before {
   gap: 10px;
 }
 
-.main-button button {
+.main-button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 190px;
   height: 46px;
   font-size: 14px;
@@ -107,7 +104,7 @@ body::before {
   left: 8em !important;
 }
 
-.see-more-slider button {
+.see-more-slider a {
   width: 260px;
   min-height: 58px;
   padding: 0 20px;
@@ -125,7 +122,7 @@ body::before {
   margin-top: 25px;
 }
 
-.see-more button {
+.see-more a {
   width: 240px;
   height: 50px;
   font-size: 15px;

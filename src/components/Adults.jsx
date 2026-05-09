@@ -12,16 +12,10 @@ export default function Adults({ onOpenModal }) {
   return (
     <>
       <section className="main-container">
-        <div className="main-button btn-primary">
-          <Link to="/boys">
-            <button>Для хлопчиків</button>
-          </Link>
-          <Link to="/girls">
-            <button>Для дівчаток</button>
-          </Link>
-          <Link to="#">
-            <button>Для дорослих</button>
-          </Link>
+        <div className="main-button link-primary">
+          <Link to="/boys">Для хлопчиків</Link>
+          <Link to="/girls">Для дівчаток</Link>
+          <Link to="#">Для дорослих</Link>
         </div>
         <div className="main-content">
           <div className="main-costumes">
@@ -176,10 +170,8 @@ export default function Adults({ onOpenModal }) {
               className="main-img"
             />
           </div>
-          <div className="go-to-gallery btn-primary">
-            <Link to="/gallery">
-              <button>Перейти до галереї</button>
-            </Link>
+          <div className="go-to-gallery link-primary">
+            <Link to="/gallery">Перейти до галереї</Link>
           </div>
         </div>
       </section>

@@ -13,7 +13,7 @@ export default function Gallery() {
   const categories = [...new Set(galleryData.map((item) => item.category))];
   return (
     <div className="gallery">
-      <div className="dropdown btn-primary">
+      <div className="dropdown">
           <button
             className="btn btn-secondary dropdown-toggle"
             type="button"

@@ -22,7 +22,7 @@
   justify-content: center;
 }
 
-.go-to-gallery button {
+.go-to-gallery a {
   width: 240px;
   height: 50px;
   font-size: 15px;

@@ -20,7 +20,7 @@ export default function Layout() {
       <header>
         <section className="header-container">
           <div className="header-links">
-            <a className="logo-company" href="">
+            <a className="logo-company" href="/">
               <img src={images["logo.png"]} alt="" className="logo" />
               <div className="logo-text">
                 Прокат

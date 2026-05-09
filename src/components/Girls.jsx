@@ -12,15 +12,15 @@ export default function Girls({ onOpenModal }) {
   return (
     <>
       <section className="main-container">
-        <div className="main-button btn-primary">
+        <div className="main-button link-primary">
           <Link to="/boys">
-            <button>Для хлопчиків</button>
+            Для хлопчиків
           </Link>
           <Link to="#">
-            <button>Для дівчаток</button>
+            Для дівчаток
           </Link>
           <Link to="/adults">
-            <button>Для дорослих</button>
+            Для дорослих
           </Link>
         </div>
         <div className="main-content">
@@ -164,9 +164,9 @@ export default function Girls({ onOpenModal }) {
               className="main-img"
             />
           </div>
-          <div className="go-to-gallery btn-primary">
+          <div className="go-to-gallery link-primary">
             <Link to="/gallery">
-              <button>Перейти до галереї</button>
+              Перейти до галереї
             </Link>
           </div>
         </div>

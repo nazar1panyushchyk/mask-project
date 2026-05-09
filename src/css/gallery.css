@@ -6,6 +6,37 @@
   width: 345px;
   height: 480px;
   margin-bottom: 20px;
+  object-fit: cover;
+}
+
+.dropdown button {
+  min-width: 180px;
+  height: 46px;
+  padding: 0 24px;
+  border: none;
+  border-radius: 999px;
+  background: #d89b22;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(216, 155, 34, 0.25);
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.dropdown button:hover {
+  background: #b87912;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(184, 121, 18, 0.3);
+}
+
+.dropdown button:active {
+  transform: translateY(0);
+  box-shadow: 0 5px 12px rgba(184, 121, 18, 0.25);
 }
 
 .dropdown {

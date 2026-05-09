@@ -22,16 +22,10 @@ function Home({ onOpenModal }) {
   return (
     <>
       <section className="main-container">
-        <div className="main-button btn-primary">
-          <Link to="boys">
-            <button>Для хлопчиків</button>
-          </Link>
-          <Link to="girls">
-            <button>Для дівчаток</button>
-          </Link>
-          <Link to="adults">
-            <button>Для дорослих</button>
-          </Link>
+        <div className="main-button link-primary">
+          <Link to="boys">Для хлопчиків</Link>
+          <Link to="girls">Для дівчаток</Link>
+          <Link to="adults">Для дорослих</Link>
         </div>
         <div className="slider-boys">
           <div className="main-costumes">
@@ -88,21 +82,17 @@ function Home({ onOpenModal }) {
                   alt="main boy5"
                   className="main-img"
                 />
-                <div className="see-more-slider btn-primary">
+                <div className="see-more-slider link-primary">
                   <Link to="/gallery">
-                    <button>
-                      Усі костюми
-                      <MdOutlineAddToPhotos size="25" />
-                    </button>
+                    Усі костюми
+                    <MdOutlineAddToPhotos size="25" />
                   </Link>
                 </div>
               </div>
             </SplideSlide>
           </Splide>
-          <div className="see-more btn-primary">
-            <Link to="/gallery">
-              <button>Побачити все</button>
-            </Link>
+          <div className="see-more link-primary">
+            <Link to="/gallery">Побачити все</Link>
           </div>
         </div>
         <div className="slider-girls">
@@ -160,21 +150,17 @@ function Home({ onOpenModal }) {
                   alt=""
                   className="main-img"
                 />
-                <div className="see-more-slider btn-primary">
+                <div className="see-more-slider link-primary">
                   <Link to="/gallery">
-                    <button>
-                      Усі костюми
-                      <MdOutlineAddToPhotos size="25" />
-                    </button>
+                    Усі костюми
+                    <MdOutlineAddToPhotos size="25" />
                   </Link>
                 </div>
               </div>
             </SplideSlide>
           </Splide>
-          <div className="see-more btn-primary">
-            <Link to="/gallery">
-              <button>Побачити все</button>
-            </Link>
+          <div className="see-more link-primary">
+            <Link to="/gallery">Побачити все</Link>
           </div>
         </div>
         <div className="slider-adults">
@@ -252,21 +238,17 @@ function Home({ onOpenModal }) {
                   alt="main adult"
                   className="main-img"
                 />
-                <div className="see-more-slider btn-primary">
+                <div className="see-more-slider link-primary">
                   <Link to="/gallery">
-                    <button>
-                      Усі костюми
-                      <MdOutlineAddToPhotos size="25" />
-                    </button>
+                    Усі костюми
+                    <MdOutlineAddToPhotos size="25" />
                   </Link>
                 </div>
               </div>
             </SplideSlide>
           </Splide>
-          <div className="see-more btn-primary">
-            <Link to="/gallery">
-              <button>Побачити все</button>
-            </Link>
+          <div className="see-more link-primary">
+            <Link to="/gallery">Побачити все</Link>
           </div>
         </div>
         <div className="main-text">
