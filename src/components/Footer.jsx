@@ -11,7 +11,7 @@ export default function Footer({ onOpenModal }) {
     <footer>
       <section className="footer-container">
         <div className="footer-logo">
-          <a className="logo-company" href="">
+          <a className="logo-company" href="/">
             <img src={images["logo.png"]} alt="" className="logo" />
             <div className="logo-text">
               Прокат
@@ -38,10 +38,10 @@ export default function Footer({ onOpenModal }) {
         </div>
         <div className="footer-contacts">
           <div className="footer-phones">
-            <a href="">
+            <a href="tel:+380505514125">
               <FiPhone size="18" /> 050-551-4125
             </a>
-            <a href="">
+            <a href="tel:+380509565080">
               <FiPhone size="18" /> 050-956-5080
             </a>
           </div>

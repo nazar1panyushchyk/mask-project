@@ -299,8 +299,14 @@ function App() {
           <Route path="/" element={<Layout onOpenModal={handleOpen} />}>
             <Route index element={<Home onOpenModal={handleOpen} />} />
             <Route path="contacts" element={<Contacts />} />
-            <Route path="gallery" element={<Gallery />} />
-            <Route path="about" element={<AboutUs />} />
+            <Route
+              path="gallery"
+              element={<Gallery onOpenModal={handleOpen} />}
+            />
+            <Route
+              path="about"
+              element={<AboutUs onOpenModal={handleOpen} />}
+            />
             <Route path="boys" element={<Boys onOpenModal={handleOpen} />} />
             <Route path="girls" element={<Girls onOpenModal={handleOpen} />} />
             <Route

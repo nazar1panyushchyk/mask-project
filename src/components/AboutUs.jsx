@@ -1,8 +1,9 @@
 import "../css/about.css";
 import images from "../imageLoader";
 import { Link } from "react-router-dom";
+import Footer from "./Footer";
 
-export default function AboutUs() {
+export default function AboutUs({ onOpenModal }) {
   return (
     <>
       <section className="about-section">
@@ -129,12 +130,11 @@ export default function AboutUs() {
             </article>
           </div>
           <div className="about-gallery-link link-primary">
-            <Link to="/gallery">
-              Переглянути всі костюми
-            </Link>
+            <Link to="/gallery">Переглянути всі костюми</Link>
           </div>
         </div>
       </section>
+      <Footer onOpenModal={onOpenModal} />
     </>
   );
 }

@@ -21,10 +21,10 @@ export default function Contacts() {
             <span>Зв'язатися з нами:</span>
           </p>
           <div className="phones">
-            <a href="">
+            <a href="tel:+380505514125">
               <FiPhone size="18" /> 050-551-4125 - Неллі
             </a>
-            <a href="">
+            <a href="tel:+380509565080">
               <FiPhone size="18" /> 050-956-5080 - Наташа
             </a>
           </div>
